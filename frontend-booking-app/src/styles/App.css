@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  width: 100vw;
+}
+
+header {
+  background-color: var(--color-primary);
+}
+
+/* Homepage */
+.navbar {
+  width: 100%;
+}
+
+.city {
+  width: 100%
+}
+
+.tipe {
+  width: 100%;
+}
+
+.featured {
+  width: 100%;
+}
+
+.footer {
+  width: 100%;
+  height: 10vh;
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* List */
+.list {
+  width: 100%;
+}
+
+/* view page */
+.rental {
+  width: 100%;
+}
+
+/* login */
+.login {
+  width: 100%;
+}

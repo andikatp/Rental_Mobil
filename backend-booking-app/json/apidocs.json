@@ -1,0 +1,450 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Booking App Rent Car API",
+    "description": "API for CRUD operations Rent Car created using express, postgres, and sequelize. Made by Andika Tri Prasetya dan Redian Erik Septiawan.",
+    "version": "1.0.0",
+    "contact": {
+      "name": "Andika Tri Prasetya dan Redian Erik Septiawan",
+      "url": "https://logrocket.com",
+      "email": "triprasetya_andika@yahoo.com"
+    }
+  },
+  "components": {
+    "schemas": {
+      "Rental": {
+        "type": "object",
+        "properties": {
+          "nama": {
+            "type": "string"
+          },
+          "kota": {
+            "type": "string"
+          },
+          "alamat": {
+            "type": "string"
+          },
+          "jarak": {
+            "type": "string"
+          },
+          "photo": {
+            "type": "string"
+          },
+          "judul": {
+            "type": "string"
+          },
+          "deskripsi": {
+            "type": "string"
+          },
+          "penilaian": {
+            "type": "integer"
+          },
+          "mobilTermurah": {
+            "type": "numeric"
+          },
+          "unggulan": {
+            "type": "boolean"
+          }
+        },
+        "required": ["nama", "kota","alamat","jarak","photo",
+        "judul","deskripsi","penilaian","mobilTermurah","unggulan"]
+      },
+      "Mobil": {
+        "type": "object",
+        "properties": {
+          "nama": {
+            "type": "string"
+          },
+          "harga": {
+            "type": "numeric"
+          },
+          "tipe": {
+            "type": "string"
+          },
+          "maximalAngkutan": {
+            "type": "integer"
+          },
+          "deskripsi": {
+            "type": "string"
+          },
+          "photo": {
+            "type": "string"
+          },
+          "rentalId": {
+            "type": "integer"
+          },
+          "userId": {
+            "type": "integer"
+          }
+        },
+        "required": ["nama", "harga", "tipe", "maximalAngkutan","deskripsi","photo",
+      "rentalId","userId"]
+      },
+      "User": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          },
+          "isAdmin": {
+            "type": "boolean"
+          },
+          "imgUrl": {
+            "type": "string"
+          },
+          "negara": {
+            "type": "string"
+          },
+          "telephone": {
+            "type": "string"
+          }
+        },
+        "required": ["email", "password","isAdmin",
+      "imgUrl","negara","telephone"]
+      }
+    }
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000",
+      "description": "localhost"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Rental",
+      "description": "API CRUD for Rental"
+    },
+    {
+      "name": "Mobil",
+      "description": "API CRUD for Mobil"
+    },
+    {
+      "name": "User",
+      "description": "API CRUD for User"
+    }
+  ],
+  "paths": {
+    "/rental": {
+      "get": {
+        "tags": ["Rental"],
+        "summary": "Get All Rental",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/rental/create": {
+      "post": {
+        "tags": ["Rental"],
+        "summary": "Create an Rental",
+        "description": "",
+        "requestBody": {
+          "description": "Create an author by specifying Characters",
+          "required": true,
+          "content": {
+            "application/json": {
+              "example": {
+                "nama": "Andika And Eriks",
+                "kota": "Aceh",
+                "alamat": "Jalan Raya ABC No 56 Aceh",
+                "jarak": "560",
+                "photo":"https://.../",
+                "judul": "erik and andikas rentals",
+                "deskripsi":"describing Of rentals",
+                "penilaian": 1,
+                "mobilTermurah": 12.0000,
+                "unggulan":"true or False"
+
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/rental/delete/{id}": {
+      "delete": {
+        "tags": ["Rental"],
+        "summary": "Delete an Rental by ID",
+        "description": "Delete an Rental by specifying the ID in the URL path.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID of the rental to delete",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/rental/update/{id}": {
+      "patch": {
+        "tags": ["Rental"],
+        "summary": "Update an Rental by ID",
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID of the Rental to update.",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Create an Rental by specifying ",
+          "required": true,
+          "content": {
+            "application/json": {
+              "example": {
+                "name": "Mathew Sadder",
+                "dateOfBirth": "1993-01-30",
+                "gender": "Male",
+                "nationality": "Indonesia"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    
+    
+    "/mobil": {
+      "get": {
+        "tags": ["Mobil"],
+        "summary": "Get All Mobil",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/mobil/create/{rentalId}": {
+      "post": {
+        "tags": ["Mobil"],
+        "summary": "Create a Mobil",
+        "description": "",
+        "requestBody": {
+          "description": "Create a Mobil by specifying",
+          "required": true,
+          "content": {
+            "application/json": {
+              "example": {
+                "nama": "Avanza",
+                "harga": 12.0000,
+                "tipe": "SUV",
+                "maximalAngkutan": 20,
+                "deskripsi":"Discribe...",
+                "photo": "https://img../..",
+                "rentalId":4,
+                "userId":4
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/mobil/delete/{id}": {
+      "delete": {
+        "tags": ["Mobil"],
+        "summary": "Delete a Mobil by ID",
+        "description": "Delete a mobil by specifying the ID in the URL path.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID of the mobil to delete",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/mobil/update/{id}": {
+      "patch": {
+        "tags": ["Mobil"],
+        "summary": "Update a Mobil by ID",
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID of the book to update.",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Update an mobil by specifying",
+          "required": true,
+          "content": {
+            "application/json": {
+              "example": {
+                "nama": "Avanza",
+                "harga": 12.0000,
+                "tipe": "SUV",
+                "maximalAngkutan": 20,
+                "deskripsi":"Discribe...",
+                "photo": "https://img../..",
+                "rentalId":4,
+                "userId":4
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    
+    "/user": {
+      "get": {
+        "tags": ["User"],
+        "summary": "Get All User",
+        "description": "User ",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/user/create": {
+      "post": {
+        "tags": ["User"],
+        "summary": "Create an User",
+        "description": "",
+        "requestBody": {
+          "description": "Create a User",
+          "required": true,
+          "content": {
+            "application/json": {
+              "example": {
+                "email": "redianandikas@gmail.com",
+                "password": "8383838ABC",
+                "isAdmin":"true or False",
+                "imgUrl":"https://..//../",
+                "negara":"Indonesia",
+                "telephone":"939393993"
+
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/user/delete/{id}": {
+      "delete": {
+        "tags": ["User"],
+        "summary": "Delete an User by ID",
+        "description": "Delete an user  by specifying the ID in the URL path.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID of the user book to delete",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/user/update/{id}": {
+      "patch": {
+        "tags": ["User"],
+        "summary": "Update an user  by ID",
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID of the user to update.",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Update an user  by specifying",
+          "required": true,
+          "content": {
+            "application/json": {
+              "example": {
+                "email": "redianandikas@gmail.com",
+                "password": "8383838ABC",
+                "isAdmin":"true or False",
+                "imgUrl":"https://..//../",
+                "negara":"Indonesia",
+                "telephone":"939393993"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "apis": ["./routes/*.js"]
+}

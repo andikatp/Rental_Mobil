@@ -1,0 +1,35 @@
+.container-tipe {
+  width: 78%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.container-tipe .tipe-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.container-tipe .tipe-list .list-item {
+  flex: 1;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.container-tipe .tipe-list .list-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.container-tipe .tipe-list .list-item h1 {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.container-tipe .tipe-list .list-item h2 {
+    font-size: 0.9rem;
+    font-weight: 900;
+}

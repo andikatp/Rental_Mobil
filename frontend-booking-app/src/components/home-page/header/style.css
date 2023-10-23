@@ -1,0 +1,112 @@
+@import url("../../../styles/index.css");
+
+/* header */
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  padding: 1rem 2rem;
+  width: 80%;
+  margin: auto;
+  color: white;
+  position: relative;
+}
+
+.header-button {
+  border: none;
+  padding: 15px 15px;
+  cursor: pointer;
+  background-color: var(--color-secondary);
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+  align-self: flex-start;
+}
+
+.header h1 {
+  font-size: 3rem;
+}
+
+.header h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.header .header-search {
+  background-color: white;
+  border: 4px solid #febb02;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -30px;
+  width: 80%;
+  left: 10%;
+  padding: 10px 0px;
+  cursor: pointer;
+}
+
+.header .header-search .header-icon {
+  color: lightgray;
+}
+
+.header .header-search .header-search-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header .header-search .header-search-input {
+  border: none;
+  outline: none;
+}
+
+.header .header-search .header-search-text {
+  color: rgb(73, 73, 73);
+  cursor: pointer;
+}
+
+.header .header-search .date {
+  position: absolute;
+  top: 74px;
+  z-index: 1;
+}
+
+.header .header-search .header-search-item .options {
+  position: absolute;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  top: 74px;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.header .header-search .header-search-item .options .option-item {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.header .header-search .header-search-item .options .option-counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: black;
+}
+
+.header .header-search .header-search-item .options .option-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #febb02;
+  cursor: pointer;
+  background-color: white;
+}

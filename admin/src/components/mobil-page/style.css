@@ -1,0 +1,10 @@
+.container-mobil {
+    width: 80%;
+  height: 90vh;
+  margin: auto;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,11 @@
+.container-footer {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-footer span {
+    font-weight: 500;
+    color: white;
+}

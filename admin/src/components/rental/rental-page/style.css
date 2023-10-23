@@ -1,0 +1,136 @@
+.container-rental {
+  width: 80%;
+  height: 90vh;
+  margin: auto;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  width: 100%;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 15px #cecece;
+  padding: 35px;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  flex-direction: column;
+}
+
+tr:nth-child(even) {
+  background-color: #dfdddd;
+}
+
+.add-link {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  justify-content: flex-end;
+}
+
+.add-link a {
+  background-color: black;
+  color: white;
+  padding: 12px;
+  border-radius: 7px;
+}
+
+.edit {
+  background-color: #0d6efd;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-right: 2px;
+  border: none;
+  cursor: pointer;
+}
+
+.delete {
+  background-color: #dc3545;
+  color: white;
+  padding: 15px 15px;
+  border-radius: 5px;
+  margin-left: 2px;
+  border: none;
+  cursor: pointer;
+}
+
+.add {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 15px 15px;
+  border-radius: 5px;
+  margin-left: 2px;
+  border: none;
+  cursor: pointer;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  text-align: center;
+  padding: 25px 15px;
+}
+
+.styled-table td img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+#tableLain {
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+#tableLain {
+  overflow-x: auto;
+}

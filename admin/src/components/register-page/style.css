@@ -1,0 +1,40 @@
+@import url('../../styles/index.css');
+
+/* login */
+
+.register {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register .container-register {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.register .container-register .register-input {
+  height: 30px;
+  padding: 10px;
+}
+
+.register .container-register .register-button {
+  border: none;
+  padding: 10px 20px;
+  background-color: var(--color-primary);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.register .container-register .register-button:disabled {
+    background-color: var(--color-primary);
+    cursor: not-allowed;
+}
+
+.register .container-register a {
+  color: var(--color-primary);
+}

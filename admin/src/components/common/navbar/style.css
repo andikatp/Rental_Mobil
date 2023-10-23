@@ -1,0 +1,80 @@
+@import url('../../../styles/index.css');
+
+nav {
+  background-color: var(--color-primary);
+  height: 8vh;
+  display: flex;
+  align-items: center;
+
+}
+
+.container-nav {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+nav .left-nav {
+    font-size: 1.2rem;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+nav ul li {
+  font-size: 1.5rem;
+  margin-right: 20px;
+}
+
+nav ul li .active {
+  font-weight: bold;
+}
+
+nav .right-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .right-nav button {
+  background-color: var(--color-secondary);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.left-nav {
+  margin: 0;
+  justify-content: left;
+}
+
+.middle-nav {
+  display: flex;
+  flex: 10;
+  justify-content: center;
+  
+}
+
+
+.right-nav a {
+  color: white;
+}
+
+nav img {
+  width: 200px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+

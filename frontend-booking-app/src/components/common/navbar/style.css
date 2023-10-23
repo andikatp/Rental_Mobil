@@ -1,0 +1,31 @@
+@import url("../../../styles/index.css");
+
+/* Navbar Part */
+.container-navbar {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.navbar-button {
+  margin-left: 20px;
+  border: none;
+  padding: 7px 15px;
+  cursor: pointer;
+  color: var(--color-primary);
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.container-navbar .navbar-item {
+  color: white;
+}
+
+.container-navbar .navbar-item h1 {
+  cursor: pointer;
+}
+
+

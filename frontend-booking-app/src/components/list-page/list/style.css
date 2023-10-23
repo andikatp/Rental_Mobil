@@ -1,0 +1,89 @@
+/* list */
+.container-list {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.container-list .list-wrapper {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.container-list .list-wrapper .list-search {
+  flex: 1;
+  background-color: #febb02;
+  padding: 10px;
+  border-radius: 10px;
+  position: sticky;
+  top: 10px;
+  height: max-content;
+}
+
+.container-list .list-wrapper .list-search .list-title {
+  font-size: 1.7rem;
+  color: #353535;
+  margin-bottom: 10px;
+}
+
+.container-list .list-wrapper .list-search .list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.container-list .list-wrapper .list-search .list-item label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.container-list .list-wrapper .list-search .list-item input {
+  height: 30px;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.list-item > span {
+  height: 30px;
+  padding: 5px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.is-option {
+  padding: 10px;
+}
+
+.container-list .list-wrapper .list-search .list-item .is-option .option-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 12px;
+}
+
+.container-list .list-wrapper .list-search .list-item .is-option .option-item .is-option-input {
+  width: 50px;
+}
+
+.container-list .list-wrapper .list-search > button {
+  padding: 10px;
+  background-color: #0071c2;
+  color: white;
+  border: none;
+  width: 100%;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.container-list .list-wrapper .listResult {
+  flex: 3;
+}

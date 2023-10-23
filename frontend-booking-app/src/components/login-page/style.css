@@ -1,0 +1,36 @@
+@import url('../../styles/index.css');
+
+/* login */
+
+.login {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login .container-login {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login .container-login .login-input {
+  height: 30px;
+  padding: 10px;
+}
+
+.login .container-login .login-button {
+  border: none;
+  padding: 10px 20px;
+  background-color: var(--color-primary);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.login .container-login .login-button:disabled {
+    background-color: #0071c28c;
+    cursor: not-allowed;
+}

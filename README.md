@@ -5,28 +5,28 @@ A fashion shop created from scratch, from backend using Postgre, Node.JS, and mo
 ##Client UI
 <table >
   <tr >
-    <td align="center"><img src="https://github.com/andikatp/stylish-shop/blob/main/img/1.png" height="200" /></td>
-    <td align="center"><img src="https://github.com/andikatp/stylish-shop/blob/main/img/2.png" height="200" /></td>
+    <td align="center"><img src="https://github.com/andikatp/Rental_Mobil/blob/main/admin/assets/1.png" height="200" /></td>
+    <td align="center"><img src="https://github.com/andikatp/Rental_Mobil/blob/main/admin/assets/2.png" height="200" /></td>
   </tr>
    <tr >
-    <td align="center"><img src="https://github.com/andikatp/stylish-shop/blob/main/img/3.png" height="200" /></td>
-    <td align="center"><img src="https://github.com/andikatp/stylish-shop/blob/main/img/4.png" height="200" /></td>
+    <td align="center"><img src="https://github.com/andikatp/Rental_Mobil/blob/main/admin/assets/3.png" height="200" /></td>
+    <td align="center"><img src="https://github.com/andikatp/Rental_Mobil/blob/main/admin/assets/4.png" height="200" /></td>
+  </tr>
+   <tr >
+    <td align="center"><img src="https://github.com/andikatp/Rental_Mobil/blob/main/admin/assets/6.png" height="200" /></td>
+    <td align="center"><img src="https://github.com/andikatp/Rental_Mobil/blob/main/admin/assets/7.png" height="200" /></td>
   </tr>
 </table>
 
 ## Admin UI
 <table >
   <tr >
-    <td align="center"><img src="https://github.com/andikatp/stylish-shop/blob/main/img/1.png" height="200" /></td>
-    <td align="center"><img src="https://github.com/andikatp/stylish-shop/blob/main/img/2.png" height="200" /></td>
+    <td align="center"><img src="https://github.com/andikatp/Rental_Mobil/blob/main/admin/assets/1.png" height="200" /></td>
+    <td align="center"><img src="https://github.com/andikatp/Rental_Mobil/blob/main/admin/assets/2.png" height="200" /></td>
   </tr>
    <tr >
-    <td align="center"><img src="https://github.com/andikatp/stylish-shop/blob/main/img/3.png" height="200" /></td>
-    <td align="center"><img src="https://github.com/andikatp/stylish-shop/blob/main/img/4.png" height="200" /></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="https://github.com/andikatp/stylish-shop/blob/main/img/5.png" height="200" /></td>
-    <td align="center"><img src="https://github.com/andikatp/stylish-shop/blob/main/img/6.png" height="200" /></td>
+    <td align="center"><img src="https://github.com/andikatp/Rental_Mobil/blob/main/admin/assets/5.png" height="200" /></td>
+    <td align="center"><img src="https://github.com/andikatp/Rental_Mobil/blob/main/admin/assets/8.png" height="200" /></td>
   </tr>
 </table>
 

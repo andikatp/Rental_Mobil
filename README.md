@@ -1,6 +1,6 @@
-# 🚗 Stylish Shop
+# 🚗 Rental Car
 
-A fashion shop created from scratch, from backend using Postgre, Node.JS, and more, CMS using react, and client using flutter with GetX pattern.
+A Rental Car app, from backend using Postgre, Node.JS, and more. CMS, and client using flutter using react.
 
 ##Client UI
 <table >
